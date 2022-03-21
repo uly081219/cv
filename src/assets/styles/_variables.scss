@@ -1,0 +1,25 @@
+@use "sass:color";
+
+
+/**
+https://stackoverflow.com/questions/37968973/how-to-structure-css-using-bem-methodology-for-adaptive-web-pages
+ */
+
+$font-family-sans-serif: 'Open Sans', sans-serif;
+$font-family-serif: "Playfair Display", serif;
+
+$text-color: rgb(0, 0,0);
+$text-blue-color: #1b518b;
+$text-grey-color: rgb(64, 64, 64);
+$bg-grey-color: rgb(64, 64, 64);
+$bg-blue-color: #1b518b;
+$bg-dark-color: rgb(0, 0, 0);
+$bg-light-color: rgb(255, 255, 255);
+
+$text-size-m: 0.8rem;
+$text-size-l: 1.5rem;
+$text-size-xl: 2rem;
+$text-size-xxl: 2.5rem;
+
+$desktopMinWidth: 1200px;
+$tabletMinWidth: 992px;
