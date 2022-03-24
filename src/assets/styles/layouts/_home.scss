@@ -12,86 +12,88 @@ body {
   background-color: $bg-blue-color;
 }
 
-.person__name {
-  font-family: $font-family-serif;
-}
+.person {
 
-.person__job {
-  @extend %blue;
-  font-family: $font-family-sans-serif;
-}
+  &--grid {
+    display: grid;
+    grid-gap: 1.5rem;
+    grid-auto-rows: minmax(100px, auto);
 
-.person__female {
-  @extend %blue;
-  font-size: $text-size-l;
-}
+    @media (min-width: 576px) {
+      grid-template-columns: 100%;
+    }
 
-.person--grid {
-  display: grid;
-  grid-gap: 1.5rem;
-  grid-auto-rows: minmax(100px, auto);
+    @media (min-width: 768px) {
+      grid-template-columns: 35% 65%;
+    }
 
-  @media (min-width: 576px) {
-    grid-template-columns: 100%;
+    @media (min-width: 992px) {
+      grid-template-columns: 30% 70%;
+    }
+
+    @media (min-width: 1200px) {
+      grid-template-columns: 22% 78%;
+    }
   }
 
-  @media (min-width: 768px) {
-    grid-template-columns: 35% 65%;
+  &__name {
+    font-family: $font-family-serif;
   }
 
-  @media (min-width: 992px) {
-    grid-template-columns: 30% 70%;
+  &__job {
+    @extend %blue;
+    font-family: $font-family-sans-serif;
   }
 
-  @media (min-width: 1200px) {
-    grid-template-columns: 22% 78%;
+  &__female {
+    @extend %blue;
+    font-size: $text-size-l;
   }
 
-}
+  &__information {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    list-style-type: none;
+    margin-left: 6px;
+  }
 
-.person__information {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  list-style-type: none;
-  margin-left: 6px;
-}
+  &__information a {
+    color: $text-blue-color;
+    text-decoration: none;
+  }
 
-.person__information a {
-  color: $text-blue-color;
-  text-decoration: none;
-}
+  &__information a:hover {
+    border-bottom: 1px solid $text-blue-color;
+  }
 
-.person__information a:hover {
-  border-bottom: 1px solid $text-blue-color;
-}
-
-.person__picture {
-  border-radius: 50%;
+  &__picture {
+    border-radius: 50%;
+  }
 }
 
 .section {
   padding-bottom: 1.5rem;
-}
 
-.section__time {
-  color: $text-blue-color;
-}
+  &__time {
+    color: $text-blue-color;
+  }
 
-.section__title {
-  color: $text-blue-color;
-  padding-bottom: 1.5rem;
-}
+  &__title {
+    color: $text-blue-color;
+    padding-bottom: 1.5rem;
+  }
 
-.section__list {
-  list-style-type: none;
-}
+  &__list {
+    list-style-type: none;
+  }
 
-.section__list_unordered {
-  padding-left: 1rem;
-}
+  &__list_unordered {
+    padding-left: 1rem;
+  }
 
-.section__item {
-  padding-bottom: 1.5rem;
+  &__item {
+    padding-bottom: 1.5rem;
+  }
 }
 
 .header, .main, .footer {
@@ -153,16 +155,16 @@ body {
   @media (min-width: 1200px) {
     grid-template-columns: 20% 50%;
   }
-}
 
-.grid--one {
-  grid-column: 1;
-  grid-row: 1;
-}
+  &--one {
+    grid-column: 1;
+    grid-row: 1;
+  }
 
-.grid--two {
-  grid-column: 2;
-  grid-row: 1;
+  &--two {
+    grid-column: 2;
+    grid-row: 1;
+  }
 }
 
 %background-color {
@@ -184,19 +186,19 @@ body {
   top: 0;
   right: 0;
   clip-path: polygon(100% 100%, 0 0, 100% 0);
-}
 
-.source__text {
-  transform: rotate(44deg);
-  position: relative;
-  left: 10px;
-  top: 25px;
-  text-align: right;
-}
+  &__text {
+    transform: rotate(44deg);
+    position: relative;
+    left: 10px;
+    top: 25px;
+    text-align: right;
+  }
 
-.source__icon {
-  transform: rotate(44deg);
-  position: absolute;
-  right: 10px;
-  top: 10px;
+  &__icon {
+    transform: rotate(44deg);
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
 }
