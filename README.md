@@ -12,7 +12,7 @@
 2. Construir el sitio web: `npm run build`
 3. Inicar el servidor de dessarrollo: `npm run dev`
 
-Puedes acceder al servidor mediante la url: http**://localhost:8123**
+Puedes acceder al servidor mediante la url: http://localhost:8123
 
 ### 👩🏽‍🏫 Explicación del proyecto
 
